@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Mia - Mis XV Años" />
+    <meta property="og:description"
+        content="¡La cuenta regresiva ha comenzado! Descubre los detalles y confirma tu asistencia." />
+
+    <meta property="og:image" content="https://lunofest.github.io/15Mia201225/assets/imagenes/miniatura.png" />
+    <meta property="og:url" content="https://lunofest.github.io/15Mia201225/" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image:type" content="image/png" />
+
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+
+
+
+
+    <link rel="stylesheet" href="estilos/normalize.css?47">
+    <link rel="stylesheet" href="estilos/styles.css?47">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css?47" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="cache.js"></script>
+    <script src="main.js"></script>
+    <title>Mis 15 años</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- <img class="header__hojas" src="assets/imagenes/flores1.webp" alt="" data-aos="fade-down"
+            data-aos-easing="linear" data-aos-duration="500">
+        <img class="header__hojas header__hojas2" src="assets/imagenes/flores1.webp" alt="" data-aos="fade-down"
+            data-aos-easing="linear" data-aos-duration="1000"> -->
+        <img class="header__imagen" src="assets/imagenes/fondo.webp" alt="fondo">
+        <div class="header__overlay">
+            <div class="header__date">
+                <time datetime="2026-07-04">20.12.2025</time>
+            </div>
+            <h1 class="header__title">Mia</h1>
+            <h2 class="header__subtitle">Mis 15 años</h2>
+            <hr class="header__divider">
+        </div>
+
+        <div class="header__invite">
+            <img class="invite__comillas" src="assets/vectores/comilla.svg" alt="">
+            <h3 class="header__inviteText">Bienvenidos a la invitación de Mia</h3>
+            <img class="invite__comillas invite__invert" src="assets/vectores/comilla.svg" alt="">
+        </div>
+
+        <img class="header__arrow" src="assets/vectores/arrow.svg" alt="">
+
+
+
+        <svg class="wave__header" width="100%" height="90" viewBox="0 0 100 20" preserveAspectRatio="none">
+            <path d="M0,10 C25,0 75,20 100,10 L100,20 L0,20 Z" fill="#cef0ed" />
+        </svg>
+
+
+    </header>
+
+    <main>
+
+
+        <section class="wave__body">
+            <img class="main__wave" src="assets/vectores/wave.svg" alt="">
+            <img class="wave__vectorTOP" src="assets/imagenes/vectorTOP.webp" alt="">
+            <div class="heart">
+                <img class="heart__icon" src="assets/vectores/heart.svg" alt="">
+                <h5 class="heart__title">Falta muy poco!</h5>
+                <div class="heart__data">
+                    <div class="data mes">
+                        <h5 class="data__text" id="days">00</h5>
+                        <h5 class="data__subtext">Días</h5>
+                    </div>
+                    <div class="data dias">
+                        <h5 class="data__text" id="hours">00</h5>
+                        <h5 class="data__subtext">Horas</h5>
+                    </div>
+                    <div class="data horas">
+                        <h5 class="data__text" id="minutes">00</h5>
+                        <h5 class="data__subtext">Min.</h5>
+                    </div>
+                    <div class="data horas">
+                        <h5 class="data__text" id="seconds">00</h5>
+                        <h5 class="data__subtext">Seg.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <img class="lineas" src="assets/vectores/lineas.svg" alt="">
+            <img class="wave__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="zoom-in-right">
+        </section>
+
+        <section class="donde">
+
+            <img class="donde__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+            <img class="donde__flores2" src="assets/imagenes/flores2.webp" alt="" data-aos="zoom-in-left">
+
+            <div class="icon__contenedor">
+                <img class="icon" src="assets/vectores/regalosICON.svg" alt="">
+            </div>
+
+            <h4 class="donde__title">Fiesta</h4>
+
+            <div class="fiesta__container">
+
+                <div class="donde__datos donde__datos1">
+                    <h4 class="datos_text">Día</h4>
+                    <h4 class="datos_text2">Sábado 20 Diciembre del 2025 <br>
+                        20:30hs</h4>
+                    <a class="datos__button"
+                        href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NTJqMWRwdm9vNzVtMXA0cGVwMjQ3a2ZoZGwgbHVub2Nvb3JwQG0&tmsrc=lunocoorp%40gmail.com">AGENDAR</a>
+                </div>
+
+                <div class="donde__datos donde__datos2">
+                    <h4 class="datos_text">Lugar</h4>
+                    <h4 class="datos_text2">Salón "Campito de los Médicos" <br> Oberá, Misiones</h4>
+                    <button class="datos__button" style="display: none;" id="openLightboxBtn">CONFIRMAR
+                        ASISTENCIA</button>
+
+                    <a class="datos__button" href="https://maps.app.goo.gl/2jMVVra93xGgRaeC7">¿CÓMO LLEGAR?</a>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <section class="fotos">
+
+            <img class="fotos__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+
+            <img class="fotos__wave" src="assets/vectores/wave2.svg" alt="">
+
+            <h3 class="title">Mis Fotos</h3>
+
+            <!-- <p class="parrafo">Siendo feliz cada momento de mi vida</p> -->
+
+            <img class="iconWEB" src="assets/vectores/camara.svg" alt="">
+
+            <section class="fotos">
+
+
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/uno.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/dos.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/tres.webp" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/imagenes/fotos/cuatro.webp" />
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="varios">
+
+            <img class="varios__flores" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+
+            <img class="varios__flores2" src="assets/imagenes/flores2.webp" alt="" data-aos="fade-left">
+
+            <img class="varios__flores3" src="assets/imagenes/flores3.webp" alt="" data-aos="fade-right">
+
+            <img class="varios__flores4" src="assets/imagenes/flores2.webp" alt="" data-aos="fade-left">
+
+            <h4 class="title varios__title">Festejemos juntos!</h4>
+            <p class="parrafo parrafo__varios">¡Hagamos una fiesta épica!</p>
+
+            <div class="varios__container">
+
+                <div class="varios__card" style="display: none;">
+
+                    <h4 class="title card__title">Música</h4>
+
+                    <img class="iconWEB" src="assets/vectores/musica.svg" alt="">
+
+                    <p class="parrafo parrafo__card">¿Cuál es la canción que no puede faltar en la Playlist de la
+                        fiesta?</p>
+
+                    <button class="varios__button" id="playlist">Sugerir canción</button>
+
+                </div>
+
+                <div class="varios__card">
+
+                    <h4 class="title card__title">DressCode</h4>
+
+                    <img class="iconWEB" src="assets/vectores/moño.svg" alt="">
+
+                    <p class="parrafo parrafo__card">Elegante Sport</p>
+
+
+                    <button class="varios__button" id="dresscode">Ver más</button>
+
+                </div>
+
+                <div class="varios__card">
+
+                    <h4 class="title card__title">Tips y Notas</h4>
+
+                    <img class="iconWEB" src="assets/vectores/notas.svg" alt="">
+
+                    <p class="parrafo parrafo__card">Información adicional
+                        para tener en cuenta</p>
+
+                    <button class="varios__button" id="tips">+INFO</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <section class="playlist contenedor block glow" id="playlist" data-aos="fade-up">
+            <div class="playlist__container">
+                <h4 class="title title--playlist">No existe fiesta sin buena música</h4>
+                <img class="playlist__img" src="assets/vectores/dj.svg" alt="">
+                <h4 class="subtitle subtitle--playlist">¿Qué música crees que no debería faltar? <br> Ayúdame a
+                    elegir...
+                </h4>
+            </div>
+
+            <div class="playlist__mensaje" id="formContainer">
+                <label class="playlist__label" for="userName">Nombre y Apellido:</label>
+                <input class="playlist__input" type="text" id="userName" placeholder="Tu nombre y apellido"
+                    data-aos="fade-left">
+
+                <label class="playlist__label playlist__label2" for="whatsappMessage">Recomendación:</label>
+                <input class="playlist__input" type="text" id="whatsappMessage"
+                    placeholder="Escribe tu tema recomendado aquí" data-aos="fade-left">
+
+                <button class="boton__ctaPlay boton__cta2" id="botonplay1">Enviar Recomendación</button>
+                <button class="boton__cta boton__cta5" id="botonplay2">Enviar a 2</button>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="regalo">
+
+            <div class="regalos__container">
+
+                <img class="regalos__wave" src="assets/vectores/wave.svg" alt="">
+
+
+                <h4 class="title title__regalos">Regalos</h4>
+
+                <p class="parrafo">Si deseas regalarme algo más que tu hermosa presencia,
+                    podrás dejar tu presente en la mesa de regalos o podés hacerlo por transferencia, aquí tienes mis
+                    datos:</p>
+
+                <img class="iconWEB" src="assets/vectores/regalos.svg" alt="">
+
+                <button class="regalos__button" id="regalos">VER MAS</button>
+
+            </div>
+
+        </section>
+
+        <section class="instagram">
+
+            <div class="wave-container">
+                <svg viewBox="0 0 1000 150" preserveAspectRatio="none">
+                    <path class="fondo-onda" d="M0,60 C250,150 750,0 1000,80 L1000,150 L0,150 Z" />
+                    <path class="linea-decorativa" d="M0,120 C300,200 600,0 1000,100" />
+                </svg>
+            </div>
+
+            <div class="instagram__contenido">
+
+                <img class="iconWEB" src="assets/vectores/instagram.svg" alt="">
+
+                <h4 class="title tituloInstagram">Etiquétame
+                </h4>
+                <p class="parrafo parrafoInsta">Comparte tus fotos y vídeos de esa hermosa noche en Instagram y
+                    etiqétame</p>
+
+                <p class="instagramDire">@mia_colmann </p>
+
+
+                <a class="instagram__button"
+                    href="https://www.instagram.com/mia_colmann/?utm_source=ig_web_button_share_sheet">VER EN
+                    INSTAGRAM</a>
+
+            </div>
+
+            <div class="wave-container invertida">
+                <svg viewBox="0 0 1000 150" preserveAspectRatio="none">
+                    <path class="fondo-onda" d="M0,60 C250,150 750,0 1000,80 L1000,150 L0,150 Z" />
+                    <path class="linea-decorativa" d="M0,120 C300,200 600,0 1000,100" />
+                </svg>
+            </div>
+
+
+        </section>
+
+
+        <section class="confirmacion contenedor block glow" id="confirmacion" data-aos="fade-up">
+            <div class="confirmacion__container">
+                <h4 class="parrafo parrafo--confirmacion" data-aos="fade-right">
+                    Recordá por favor confirmar tu presencia <br>
+                </h4>
+                <div id="asistencia">
+                    <br>
+                    <div class="asistencia__datos">
+                        <br>
+
+                        <!-- Sección de cantidad de personas -->
+                        <div class="cantidad-personas">
+                            <h5 class="cantidad-personas__title">¿Por cuántas personas confirmás?</h5>
+                            <select class="cantidad-personas__select" id="cantidadPersonas">
+                                <option value="0" selected disabled>-- Selecciona una cantidad --</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                                <option value="9">9 personas</option>
+                                <option value="10">10 personas</option>
+                            </select>
+
+                            <div class="personas-container" id="personasContainer">
+                                <!-- Aquí se generarán dinámicamente los campos para cada persona -->
+                            </div>
+                        </div>
+
+
+                        <label class="asistencia__label asistencia__label2" for="customMessage">Mensaje opcional</label>
+                        <textarea class="input__text input__text2" id="customMessage"
+                            placeholder="Mensaje opcional"></textarea>
+                        <br>
+                        <button class="boton__cta boton__cta3" id="btnConfirmacion1">
+                            <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Confirmar
+                            presencia</button>
+                        <button class="boton__cta boton__cta3 hidden" id="btnConfirmacion2">
+                            <img class="whatsapp__icon" src="assets/vectores/whatsapp_redondo.svg" alt="">Confirmar
+                            presencia</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cierre">
+
+            <h4 class="title title__cierre">Mia</h4>
+            <h4 class="cierre__subtitle">Mis 15 Años</h4>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <section class="info" id="info">
+            <h6 class="info__text">
+                Página creada por "Luno Digitales" para los 15 de Mia - 2025 &copy todos los derechos reservados
+                - <br>
+                <a class="info__link" href="https://www.luno.net.ar/">
+                    www.luno.net.ar
+                </a>
+            </h6>
+
+        </section>
+    </footer>
+
+
+
+
+    <!-- Contenedor del Lightbox -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div class="ligtbox" id="confirmationLightbox">
+            <div class="lightbox__confirmacion">
+                <span class="lightbox__close">&times;</span>
+                <div class="ligtbox__buttons">
+                    <button class="lightbox__button" id="siAsistire">SI ASISTIRÉ</button>
+                    <button class="lightbox__button" id="noAsistire">NO ASISTIRÉ</button>
+                </div>
+                <input type="text" class="lightbox__input" placeholder="Escribe tu nombre" />
+                <textarea class="lightbox__textarea" rows="3"
+                    placeholder="Indica si tienes alguna restricción alimenticia, por ej. soy Celiaco, soy vegetariano, etc."></textarea>
+                <button class="lightbox__confirm">CONFIRMAR ASISTENCIA</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Sugerir Canción -->
+    <div class="lightbox-custom-overlay" id="lightboxPlaylist">
+        <div class="lightbox__content">
+            <span class="lightbox__close">&times;</span>
+            <img class="iconWEB" src="assets/vectores/musica.svg" alt="Música">
+            <h3 class="lightbox__title">Sugerir una canción</h3>
+            <input type="text" class="lightbox__input" placeholder="Nombre de la canción">
+            <input type="text" class="lightbox__input" placeholder="Link (opcional)">
+            <button class="lightbox__button">Sugerir canción</button>
+        </div>
+    </div>
+
+    <!-- Lightbox DressCode -->
+    <div class="lightbox-custom-overlay" id="lightboxDresscode">
+        <div class="lightbox__content">
+            <span class="lightbox__close">&times;</span>
+            <img class="iconWEB" src="assets/vectores/moño.svg" alt="DressCode">
+            <h3 class="lightbox__title">DressCode</h3>
+            <p class="lightbox__paragraph">Evitar las prendas color Gris y Plateado</p>
+        </div>
+    </div>
+
+    <!-- Lightbox Tips y Notas -->
+    <div class="lightbox-custom-overlay" id="lightboxTips">
+        <div class="lightbox__content">
+            <span class="lightbox__close">&times;</span>
+            <img class="iconWEB" src="assets/vectores/notas.svg" alt="Tips y Notas">
+            <h3 class="lightbox__title">Tips y Notas</h3>
+            <p class="lightbox__paragraph">• ¡Por favor ser puntuales! <br>
+
+                • Confirmar asistencia hasta el domingo 30 de Noviembre. <br>
+                • Quiero que disfrutes cada momento de mi fiesta
+            </p>
+
+            <!-- <ul class="lightbox__list">
+                <h3 class="lightbox__chanchi">CRONOGRAMA</h3>
+                <li>20:30 Recepción</li>
+                <li>21:30 Ingreso cumpleañera</li>
+                <li>22:00 Cena</li>
+                <li>00:00 Feliz cumpleaños - Vals</li>
+                <li>00:30 Apertura barra móvil - 1ra. parte de Baile</li>
+                <li>02:00 Bajón</li>
+                <li>02:30 2da. parte de Baile</li>
+                <li>05:00 Finalización</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Lightbox Regalos -->
+    <div class="lightbox-custom-overlay" id="lightboxRegalos">
+        <div class="lightbox__content regalos__content">
+            <span class="lightbox__close regalos__close">&times;</span>
+            <img class="iconWEB regalos__icon" src="assets/vectores/regalos.svg" alt="Regalos">
+            <h3 class="lightbox__title regalos__title">Regalos Fisicos y Transferencias</h3>
+            <p class="lightbox__paragraph regalos__paragraph">Datos: </p>
+            <!-- <h4 class="lightbox__cbu regalos__cbu">CBU: <span class="copy-text regalos__cbu-text"
+                    id="cbuText">0000000000000000</span></h4>
+            <button class="lightbox__button regalos__copy-btn" id="copyCbu">Copiar CBU</button> -->
+            <h4 class="lightbox__alias regalos__alias">Alias: <span class="copy-text regalos__alias-text"
+                    id="aliasText">NUDO.LIBRA.JADE</span></h4>
+            <button class="lightbox__button regalos__copy-btn" id="copyAlias">Copiar Alias</button>
+        </div>
+    </div>
+
+    <!-- Modal de Bienvenida -->
+    <div class="welcome-modal-overlay" id="welcomeModal">
+        <div class="welcome-modal">
+            <div class="welcome-modal__content">
+                <div class="welcome-modal__date">20.12.2025</div>
+                <h2 class="welcome-modal__title">
+                    Bienvenidos a la invitación<br>de Mia
+                </h2>
+                <p class="welcome-modal__subtitle">La música de fondo es parte de la experiencia</p>
+                <div class="welcome-modal__buttons">
+                    <button class="welcome-modal__button" id="btnConMusica">INGRESAR CON MÚSICA</button>
+                    <button class="welcome-modal__button" id="btnSinMusica">INGRESAR SIN MÚSICA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript/script.js?47"></script>
+</body>
+
+</html>
